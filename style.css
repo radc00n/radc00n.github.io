@@ -5,20 +5,23 @@ body {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: #333;
     padding: 10px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    color: #bbb;
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    margin-left: 100px;
 }
 
 ul {
@@ -32,13 +35,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #bbb;
 }
 
 .hero {
     text-align: center;
     padding: 50px;
-    background-color: #f4f4f4;
+
 }
 
 .hero h1 {
@@ -46,16 +49,28 @@ a {
     margin-bottom: 20px;
 }
 
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; 
+}
+
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.image-gallery {
+.iPhone11Pro {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.quadrants {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -63,10 +78,30 @@ a {
     background-color: #f8f8f8;
 }
 
-.image-gallery img {
-    max-width: 100%;
+.quadrant {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.quadrant h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.quadrant p {
+    margin-bottom: 10px;
+}
+
+.quadrant img {
+    max-width: 60%;
     height: auto;
-    margin-bottom: 20px;
+}
+
+.quadrant-link {
+    color: #007bff;
 }
 
 footer {
